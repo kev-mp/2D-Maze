@@ -37,21 +37,27 @@ main()
 
 <body>
 <div>
-    Number of Rows: 3 <input id="rowSlider" type="range"
-    min="3" max="50" step="1" value="3" />
-    50
+    3<input id="rowSlider" type="range"
+    min="3" max="50" step="1" value="3" />50 ---
+    Number of Rows: <label id = "rowText">3</label>
 </div>
 <div>
-    Number of Columns: 3 <input id="columnSlider" type="range"
-    min="3" max="50" step="1" value="3" />
-    50
+    3<input id="columnSlider" type="range"
+    min="3" max="50" step="1" value="3" />50 ---
+    Number of Columns <label id = "columnText">3</label>
 </div>
 <div>
     <button id="generateBtn" name="button">Generate</button>
 </div>
 
-<canvas id="gl-canvas" width="768" height="768">
+<canvas id="gl-canvas" width="740" height="740">
 Oops ... your browser doesn't support the HTML5 canvas element
 </canvas>
+<div>
+    Note: Entrance and exit points depend on number of rows/columns. That is, if there are more rows than columns, then the entrance and exit will be on the north and south outer walls, respectively. Otherwise, they'll stick to the left and right outer walls.
+</div>
+<div>
+    Also it's tank controls (turn with left and right, move forward with up).
+</div>
 </body>
 </html>
